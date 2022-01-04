@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 
 const inquirer = require("inquirer");
-const fs = require('fs')
-
+const fs = require('fs');
+const generatePage = require('./utils/generateMarkdown');
 
 // TODO: Create a function to write README file
 
@@ -35,7 +35,6 @@ function init() {
                 }
             }
         },
-
         {
             type: 'input',
             message: "Provide a step-by-step description of how to get the development environment running.",
@@ -52,18 +51,29 @@ function init() {
             name: 'Credits'
         },
         {
-            type: 'input',
+            type: 'list',
             message: "The last section of a good README is a license.",
-            name: 'License'
+            name: 'License',
+            choices: ['MIT', "Apache_2.0", "BSD_3--Clause", "BSD_2--Clause"]
+        },
+        {
+            type: 'input',
+            message: 'How would you run any testing on this project?',
+            name: 'test'
+        },
+        {
+            type: 'input',
+            message: 'Are you accepting contributors?',
+            name: 'contributors'
         },
         {
             type: 'input',
             name: 'username',
             message: 'What is your Github Username? (Required)',
             validate: usernameInput => {
-                if(usernameInput) {
+                if (usernameInput) {
                     return true;
-                }else {
+                } else {
                     console.log('Please enter your GitHub Username!')
                 }
             }
@@ -73,9 +83,9 @@ function init() {
             name: 'repository',
             message: 'What is your GitHub Repository name? (Required)',
             validate: repositoryInput => {
-                if(repositoryInput) {
+                if (repositoryInput) {
                     return true;
-                }else {
+                } else {
                     console.log('Please enter Repository name!')
                 }
             }
@@ -86,8 +96,64 @@ function init() {
         console.log(answer.title);
         console.log(answer.description);
         console.log(answer)
-        // look into fs.writeFile()
+        fs.writeFile('README.md', generatePage(answer), (err) => err ? console.log(err) : console.log('README has been created'));
+
+        // answerData.projects.push(answer)
+        // if(answer.confirmAddProject){
+        //     return promptProject(answerData)
+        // }else{
+        //     return answerData;
+        // }
     })
 }
 
-    init();
+
+init();
+
+
+
+
+// Function call to initialize app
+
+// .then(readmeData => {
+    // const pageHTML = generatePage(answerData);
+
+    // fs.writeFile('./index.html', pageHTML, err => {
+    //     if (err) throw new Error(err);
+
+    //     console.log('Page created! Check out index.html')
+    // })
+// })
+
+
+
+
+// .then(promptProject)
+// .then(answerData=>{
+//     return generatePage(answerData)
+// })
+// .then(pageHTML=>{
+//     return writeFile(pageHTML)
+// })
+// .then(writeFileResponse=>{
+//     console.log(writeFileResponse)
+//     return copyFile()
+// })
+// .then(copyFileResponse=>{
+//     console.log(copyFileResponse)
+// })
+// .catch(err =>{
+//     console.log(err)
+// })
+
+
+
+// .then(answerData => {
+//     const pageHTML = generatePage(answerData);
+
+//     fs.writeFile('./index.html', pageHTML, err => {
+//         if (err) throw new Error(err);
+
+//         console.log('Page created! Check out index.html in this directory to see it!');
+//     });
+// });
