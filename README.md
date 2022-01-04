@@ -1,6 +1,6 @@
 # Readme Generator
 ------------------------------------------------
-#Table of Contents
+# Table of Contents
 
 [Description](#Description)
 
@@ -44,9 +44,13 @@ no
 ## Badge
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## GitHub -- Tasevski87
+## GitHub
+Tasevski87
+
 https://github.com/Tasevski87
 
-## GitHub-Repo -- Proffesional-ReadMe-gen
+## GitHub-Repo
+Proffesional-ReadMe-gen
+
 https://github.com/Tasevski87/Proffesional-ReadMe-gen
 

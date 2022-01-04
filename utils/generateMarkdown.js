@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 ------------------------------------------------
-#Table of Contents
+# Table of Contents
 
 [Description](#Description)
 
@@ -46,10 +46,14 @@ ${data.contributors}
 ## Badge
 [![License](https://img.shields.io/badge/License-${data.License}-blue.svg)](https://opensource.org/licenses/${data.License})
 
-## GitHub -- ${data.username}
+## GitHub
+${data.username}
+
 https://github.com/${data.username}
 
-## GitHub-Repo -- ${data.repository}
+## GitHub-Repo
+${data.repository}
+
 https://github.com/${data.username}/${data.repository}
 
 `;
