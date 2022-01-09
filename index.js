@@ -1,13 +1,11 @@
-// TODO: Include packages needed for this application
+// installed packages needed for this application
 
 const inquirer = require("inquirer");
 const fs = require('fs');
 const generatePage = require('./utils/generateMarkdown');
 
-// TODO: Create a function to write README file
 
-
-// TODO: Create a function to initialize app
+//function to initialize app
 function init() {
     inquirer.prompt([
         {
@@ -96,64 +94,11 @@ function init() {
         console.log(answer.title);
         console.log(answer.description);
         console.log(answer)
-        fs.writeFile('README.md', generatePage(answer), (err) => err ? console.log(err) : console.log('README has been created'));
-
-        // answerData.projects.push(answer)
-        // if(answer.confirmAddProject){
-        //     return promptProject(answerData)
-        // }else{
-        //     return answerData;
-        // }
+        //function to write README file
+        fs.writeFile('README.md', generatePage(answer), (err) => err ? console.log(err) : console.log('README has been created'));        
     })
 }
-
-
 init();
 
 
 
-
-// Function call to initialize app
-
-// .then(readmeData => {
-    // const pageHTML = generatePage(answerData);
-
-    // fs.writeFile('./index.html', pageHTML, err => {
-    //     if (err) throw new Error(err);
-
-    //     console.log('Page created! Check out index.html')
-    // })
-// })
-
-
-
-
-// .then(promptProject)
-// .then(answerData=>{
-//     return generatePage(answerData)
-// })
-// .then(pageHTML=>{
-//     return writeFile(pageHTML)
-// })
-// .then(writeFileResponse=>{
-//     console.log(writeFileResponse)
-//     return copyFile()
-// })
-// .then(copyFileResponse=>{
-//     console.log(copyFileResponse)
-// })
-// .catch(err =>{
-//     console.log(err)
-// })
-
-
-
-// .then(answerData => {
-//     const pageHTML = generatePage(answerData);
-
-//     fs.writeFile('./index.html', pageHTML, err => {
-//         if (err) throw new Error(err);
-
-//         console.log('Page created! Check out index.html in this directory to see it!');
-//     });
-// });

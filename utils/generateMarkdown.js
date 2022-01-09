@@ -1,6 +1,10 @@
-// TODO: Create a function to generate markdown for README
+// this is a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ## Description
+${data.description}
+
 ------------------------------------------------
 # Table of Contents
 
@@ -21,9 +25,6 @@ function generateMarkdown(data) {
 [GitHub-Repo](#Github-Repo)
 
 -------------------------------------------------
-
-## Description
-${data.description}
 
 ## Installation
 ${data.Instalation}
