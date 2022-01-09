@@ -1,7 +1,7 @@
 # Proffesional-ReadMe-gen
 
   ## Description
-Proffesional-ReadMe-gen it is a back end developed application which is created to generatehigh quality README.md file depending on a series of question that user is answering in terminal comand line.
+Proffesional-ReadMe-gen it is a back end developed application which is created to generate high quality README.md file depending on a series of question that user is answering in terminal comand line.
 
 ------------------------------------------------
 # Table of Contents
@@ -25,7 +25,7 @@ Proffesional-ReadMe-gen it is a back end developed application which is created 
 -------------------------------------------------
 
 ## Installation
-In order to run this applicatin the client needs to download our code fromg GitHub,  install Node, instal npm inquirer and start the aplication in the terminal comand line with node index.js
+In order to run this applicatin the client needs to download our code from GitHub,  install Node, instal npm inquirer and start the aplication in the terminal comand line with node index.js
 
 ## Usage
 Here is exsample of the application in use:
@@ -38,7 +38,7 @@ MIT
 
 ## Tests
 This application test was run in the terminal comand line. In the future test skript like jest will be implemented. Here is exsample of testin:
-
+https://watch.screencastify.com/v/CWR8mCtPXLPaqeQGTdgL
 ## Contributors
 This project is school assignment and contributors were not allowed. The project is public and in the future contributors will be welcome.
 
