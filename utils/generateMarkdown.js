@@ -38,6 +38,9 @@ ${data.Credits}
 ## License
 ${data.License}
 
+## Program Languages 
+${data.languages}
+
 ## Tests
 ${data.test}
 

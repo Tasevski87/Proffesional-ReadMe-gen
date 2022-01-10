@@ -55,6 +55,12 @@ function init() {
             choices: ['MIT', "Apache_2.0", "BSD_3--Clause", "BSD_2--Clause"]
         },
         {
+            type: 'checkbox',
+            name: 'languages',
+            message: 'Which program languages did you use to create the aplication?)',
+            choices: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Node', 'Python', 'C++', 'C#']
+        },
+        {
             type: 'input',
             message: 'How would you run any testing on this project?',
             name: 'test'
@@ -95,7 +101,7 @@ function init() {
         console.log(answer.description);
         console.log(answer)
         //function to write README file
-        fs.writeFile('README.md', generatePage(answer), (err) => err ? console.log(err) : console.log('README has been created'));        
+        fs.writeFile('README.md', generatePage(answer), (err) => err ? console.log(err) : console.log('README has been created'));
     })
 }
 init();
