@@ -37,7 +37,7 @@ This project is school assignment  and it was individual project. The project is
 MIT
 
 ## Tests
-This application test was run in the terminal comand line. In the future test skript like jest will be implemented. Here is exsample of testin:
+This application test was run in the terminal comand line. In the future test skript like jest will be implemented. Here is exsample of testing:
 https://watch.screencastify.com/v/CWR8mCtPXLPaqeQGTdgL
 ## Contributors
 This project is school assignment and contributors were not allowed. The project is public and in the future contributors will be welcome.
@@ -55,3 +55,5 @@ Proffesional-ReadMe-gen
 
 https://github.com/Tasevski87/Proffesional-ReadMe-gen
 
+## Screencastify video of application:
+https://watch.screencastify.com/v/ZGSTVD7EqabY0qdmd4NH
