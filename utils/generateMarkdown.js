@@ -60,6 +60,11 @@ ${data.repository}
 
 https://github.com/${data.username}/${data.repository}
 
+## Screencastify video of application:
+${data.video}
+
+## Heroku link:
+${data.heroku}
 `;
 }
 
