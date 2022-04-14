@@ -1,7 +1,7 @@
-# Note-Taker
+# `Juhst Chat`
 
   ## Description
-Note-Taker app it is created for the needs of a small business client, where he can write, save and delete notes.
+`Juhst Chat app` is a simple, user friendly and easy to use chat messaging app. The app is purposefully only focused on messaging, to deliver a high quality messaging experience and nothing else. You can look up users, add them as your friend, and begin messaging immediately.
 
 ------------------------------------------------
 # Table of Contents
@@ -18,6 +18,10 @@ Note-Taker app it is created for the needs of a small business client, where he 
 
 [Badge](#Badge)
 
+[Screencastify](#Screencastify)
+
+[Heroku link](#Heroku)
+
 [GitHub](#GitHub)
 
 [GitHub-Repo](#Github-Repo)
@@ -25,22 +29,34 @@ Note-Taker app it is created for the needs of a small business client, where he 
 -------------------------------------------------
 
 ## Installation
-This application is created backend and the client need to copy our code from gitHub and download to his local machine. Next he needs to install node, npm packege and express.js. To activate the app inside the terminal he need to type node server.js and press enter and the app will tell him that website can be deployed on http://localhost:3001/. Than he needs to go to his browser and open the link to test the app by him self. Note-Taker app is also deployed on Heroku.com where the client can test the website in live (link is provided at the bottom ).
+In order to install `Juhst Chat` application user need to visit my public repo where code is avaiable. After copy the code and instaling to the local machine, User need to install `Node.js` and all the dependencies so the app can work. After installing `Node.js` In the top of the root app user need to open terminal and run the command `npm install`, next on client side folder need to open integrated terminal and run command `npm install`, and last is server side folder open integrated terminal and run command `npm install`. Aftr all dependecies are installed app can be started in the top of the root terminal with command npm run develop.
 
 ## Usage
-Here is exapmple of the app: ![Untitled_ Jan 22, 2022 10_44 PM](https://user-images.githubusercontent.com/91975394/150663921-89a67e66-9d7c-415f-938c-a91e6393b97b.gif)
+Here is video example of the application in use:
+
+https://drive.google.com/file/d/1ee-Xw1ZBSZTI5ATQVeStMCq2KMAsCVdr/view
 
 ## Credits
-This project is school assignment and it was individual project. The project is public and in the future collaborators are welcome.
+This is a group project and the collaborators are:
+
+https://github.com/scollins117 
+
+https://github.com/Tasevski87 
+ 
+https://github.com/sirTedDanson/
 
 ## License
 MIT
 
 ## Program Languages 
-JavaScript,Node,Express.js
+`HTML`, `CSS`, `Javascript`, `Node.js`
 
 ## Tests
-This app was tested in live with http://localhost:3001/. and routes were tested in Insomnia app. Here is exapmle:https://watch.screencastify.com/v/kknmM1zyPYH1mCASRXal
+Testing was done with Graphql. Here is example:
+
+<img width="300" alt="Screen Shot 2022-04-13 at 10 19 08 AM" src="https://user-images.githubusercontent.com/91975394/163203092-85bda8ac-8ea9-47db-bf40-8857f0ac514b.png">  <img width="300" alt="Screen Shot 2022-04-13 at 10 11 20 AM" src="https://user-images.githubusercontent.com/91975394/163203095-c0a8ce77-4874-4da8-8547-00eb8b0b3c87.png">
+
+<img width="300" alt="Screen Shot 2022-04-13 at 10 11 42 AM" src="https://user-images.githubusercontent.com/91975394/163203084-734128ed-1f29-4f2c-89f6-9f65009b81d3.png">  <img width="300" alt="Screen Shot 2022-04-13 at 10 17 40 AM" src="https://user-images.githubusercontent.com/91975394/163203087-0b602b0c-341b-4b15-bde8-a3eec1378678.png">
 
 ## Contributors
 This project is school assignment and contributors were not allowed. The project is public and in the future contributors will be welcome.
@@ -48,18 +64,17 @@ This project is school assignment and contributors were not allowed. The project
 ## Badge
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+## Screencastify
+https://drive.google.com/file/d/1ee-Xw1ZBSZTI5ATQVeStMCq2KMAsCVdr/view
+
+## Heroku
+https://drive.google.com/file/d/1ee-Xw1ZBSZTI5ATQVeStMCq2KMAsCVdr/view
+
 ## GitHub
-Tasevski87
 
 https://github.com/Tasevski87
 
 ## GitHub-Repo
-Note-Taker
+https://github.com/Tasevski87/chat-app-live/branches
 
-https://github.com/Tasevski87/Note-Taker
 
-## Screencastify video of application:
-https://watch.screencastify.com/v/M4GmSQs9C0DSrFGSiwoc
-
-## Heroku link:
-https://note-taker-tt.herokuapp.com/

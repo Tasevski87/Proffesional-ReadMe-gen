@@ -58,7 +58,7 @@ function init() {
             type: 'checkbox',
             name: 'languages',
             message: 'Which program languages did you use to create the aplication?)',
-            choices: ['HTML',  'CSS',  'JavaScript',  'jQuery',  'Bootstrap',  'Node',  'Python',  'C++',  'C#',  'Jest test script',  'Express.js']
+            choices: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap', 'Node', 'Python', 'C++', 'C#', 'Jest test script', 'Express.js', 'MySQL2 Package', 'Inquirer Package', 'console.table.package']
         },
         {
             type: 'input',
@@ -69,6 +69,31 @@ function init() {
             type: 'input',
             message: 'Are you accepting contributors?',
             name: 'contributors'
+        },
+
+        {
+            type: 'input',
+            name: 'Screencastify',
+            message: 'Enter Screencastify video of application:',
+            validate: videoInput => {
+                if (videoInput) {
+                    return true;
+                } else {
+                    console.log('Please enter Screencastify video of application:!')
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'Heroku',
+            message: 'Enter Heroku link',
+            validate: herokuInput => {
+                if (herokuInput) {
+                    return true;
+                } else {
+                    console.log('Please enter Heroku link!')
+                }
+            }
         },
         {
             type: 'input',
@@ -94,30 +119,8 @@ function init() {
                 }
             }
         },
-        {
-            type: 'input',
-            name: 'video',
-            message: 'Enter Screencastify video of application:',
-            validate: videoInput => {
-                if (videoInput) {
-                    return true;
-                } else {
-                    console.log('Please enter Screencastify video of application:!')
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: 'heroku',
-            message: 'Enter Heroku link',
-            validate: herokuInput => {
-                if (herokuInput) {
-                    return true;
-                } else {
-                    console.log('Please enter Heroku link!')
-                }
-            }
-        },
+
+
         //find all questions
     ]).then(answer => {
         console.log(answer.title);

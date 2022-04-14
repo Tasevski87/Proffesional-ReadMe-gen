@@ -20,6 +20,10 @@ ${data.description}
 
 [Badge](#Badge)
 
+[Screencastify](#Screencastify)
+
+[Heroku link](#Heroku)
+
 [GitHub](#GitHub)
 
 [GitHub-Repo](#Github-Repo)
@@ -50,6 +54,12 @@ ${data.contributors}
 ## Badge
 [![License](https://img.shields.io/badge/License-${data.License}-blue.svg)](https://opensource.org/licenses/${data.License})
 
+## Screencastify
+${data.video}
+
+## Heroku
+${data.Heroku}
+
 ## GitHub
 ${data.username}
 
@@ -59,12 +69,6 @@ https://github.com/${data.username}
 ${data.repository}
 
 https://github.com/${data.username}/${data.repository}
-
-## Screencastify video of application:
-${data.video}
-
-## Heroku link:
-${data.heroku}
 `;
 }
 
